@@ -1,0 +1,35 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import 'variables';
+
+body {
+    background-color: $bgColor;
+    font-family: 'Poppins', serif;
+}
+
+.h-fit-content {
+    height: fit-content;
+    height: -moz-fit-content;
+    height: -webkit-fit-content;
+}
+  
+
+$buttonTypes: primary, secondary;
+
+@mixin btn($type) {
+    @if $type == secondary {
+        @apply bg-purple text-white dark:hover:bg-purple focus:ring-purple
+    }
+    @if $type == primary {
+        @apply bg-blue text-white dark:hover:bg-blue focus:ring-blue
+    }
+    @apply border flex w-fit rounded py-4 px-4 text-center focus:outline-none focus:ring-2 focus:ring-opacity-50
+}
+
+@each $type in $buttonTypes {
+    .btn-#{$type} {
+      @include btn($type)
+    }
+}

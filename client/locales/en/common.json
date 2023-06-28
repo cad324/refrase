@@ -1,0 +1,17 @@
+{
+    "welcome": "Welcome to my Next.js app!",
+    "home": "Home",
+    "appName": "Refrase",
+    "blog": "Blog",
+    "minRead": "min read",
+    "notFoundTitle": "Looks like you found the end, my friend",
+    "notFoundMsg": "Sorry about that! Please visit our hompage to get where you need to go.",
+    "product": "Product",
+    "copyright": "Copyright @ {{year}} {{appName}}; all rights reserved.",
+    "homepage": "Homepage",
+    "products": {
+        "blogToThread": "Blog to Twitter Thread Converter",
+        "blogToThreadDesc": "This tool will convert your blog page to a Twitter thread and reach a much wider audience.",
+        "generateTweets": "Generate Tweets"
+    }
+}
